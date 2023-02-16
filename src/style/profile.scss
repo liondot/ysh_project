@@ -1,0 +1,30 @@
+.profile {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+    max-width: 300px;
+    margin-left: 20%;
+    .my_image {
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+    }
+    .desc{
+        .myName {
+            font-size: 26px;
+            margin-right: 10px;
+        }
+        p {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}

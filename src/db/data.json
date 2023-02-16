@@ -1,0 +1,117 @@
+{
+    "datas" : [
+        {"id": 1, "data": "Front-end"},
+        {"id": 2, "data": "Publishing"},
+        {"id": 3, "data": "Design"}
+    ],
+    "projects":[
+        {
+            "id": 1,
+            "data": "Front-end",
+            "title": "프론트엔드1",
+            "subTitle" : "서브타이틀입니다.서브타이틀은 타이틀보다는 길어야겠죠",
+            "github": "https://www.github.com",
+            "server": "https://www.github.com",
+            "image": "/image/project/image1.png",
+            "skills": "html, css, sass, j-query, js, react, illust, photoshop",
+            "detailMain": "/image/detail/main_event1.png",
+            "detailFull":"/image/detail/event1.png",
+            "period" : 10,
+            "state" : "pc, tablet, mobile",
+            "toDo" : "랜딩페이지",
+            "preview": ["반응형", "slick", "고객데이터베이스 폼", ""]
+        },
+        {
+            "id": 2,
+            "data": "Design",
+            "designData": "web-design",
+            "title": "디자인2",
+            "subTitle" : "서브타이틀입니다.",
+            "github": "www.github.com",
+            "image": "./image/project/Mockup.psd"
+        },
+        {
+            "id": 3,
+            "data": "Front-end",
+            "title": "프론트엔드1",
+            "subTitle" : "서브타이틀입니다.",
+            "github": "www.github.com",
+            "image": "./image/project/Mockup.psd"
+        },
+        {
+            "id": 4,
+            "data": "Publishing",
+            "title": "퍼블리싱1",
+            "subTitle" : "서브타이틀입니다.",
+            "github": "www.github.com",
+            "image": "./image/project/Mockup.psd"
+        },
+        {
+            "id": 5,
+            "data": "Publishing",
+            "title": "퍼블리싱2",
+            "subTitle" : "서브타이틀입니다.",
+            "github": "www.github.com",
+            "image": "./image/project/Mockup.psd"
+        },
+        {
+            "id": 6,
+            "data": "Design",
+            "designData": "event",
+            "title": "디자인3",
+            "subTitle" : "서브타이틀입니다.",
+            "github": "www.github.com",
+            "image": "./image/project/Mockup.psd"
+        },
+        {
+            "id": 7,
+            "data": "Design",
+            "designData": "web-design",
+            "title": "디자인4",
+            "subTitle" : "서브타이틀입니다.",
+            "github": "www.github.com",
+            "image": "./image/project/Mockup.psd"
+        },
+        {
+            "id": 8,
+            "data": "Design",
+            "designData": "web-design",
+            "title": "디자인5",
+            "subTitle" : "서브타이틀입니다.",
+            "github": "www.github.com",
+            "image": "./image/project/Mockup.psd"
+        },
+        {
+            "id": 9,
+            "data": "Design",
+            "designData": "event",
+            "title": "디자인6",
+            "subTitle" : "서브타이틀입니다.",
+            "github": "www.github.com",
+            "image": "./image/project/Mockup.psd"
+        },
+        {
+            "id": 10,
+            "data": "Publishing",
+            "title": "퍼블리싱3",
+            "subTitle" : "서브타이틀입니다.",
+            "github": "www.github.com",
+            "image": "./image/project/Mockup.psd"
+        },
+        {
+            "id": 11,
+            "data": "Front-end",
+            "title": "프론트엔드2",
+            "subTitle" : "서브타이틀입니다.",
+            "image": "./image/project/Mockup.psd"
+        },
+        {
+            "id": 12,
+            "data": "Publishing",
+            "title": "퍼블리싱4",
+            "subTitle" : "서브타이틀입니다.",
+            "image": "./image/project/Mockup.psd"
+        }
+        
+    ]
+}

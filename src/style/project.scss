@@ -1,0 +1,21 @@
+.projectBox {
+    width: 70%;
+    float: right;
+    height: 100%;
+    box-sizing: border-box;
+    h2 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+.project {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8%;
+    margin-top: 50px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 10% 0 0;
+}
+}
+

@@ -1,0 +1,116 @@
+.projectCon {
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+   
+    .items {
+        cursor: pointer;
+        .item {
+            border-radius: 30px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            position: relative;
+           
+            &:after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 0;
+                background-color: #000;
+                opacity: .6;
+                visibility: hidden;
+                transition: all .2s ease-in-out;
+            }
+
+            .itemImg {
+                width: 100%;
+                max-height: 350px;
+                height: 100%;
+                overflow: hidden;
+                box-sizing: border-box;
+                img {
+                    width: 100%;
+                    transition: all .3s ease;
+                 } 
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+                &:after {
+                    visibility: visible;
+                    height: 100%;
+                }
+                .itemDesc {
+                    opacity: 1;
+                }
+             }
+            .itemDesc {
+                padding: 1rem;
+                position: absolute;
+                left: 0;
+                top: 0;
+                color: #fff;
+                z-index: 1;
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                text-align: left;
+                opacity: 0;
+                transition: opacity .2s ease-in-out;
+                .iconList {
+                    text-align: center;
+                    display: flex;
+                    span {
+                        font-size: 20px;
+                        margin: 0 5px;
+                        width: 40px;
+                        height: 40px;
+                        text-align: center;
+                        line-height: 45px;
+                        border-radius: 50%;
+                        border: 1px solid #fff;
+                        display: inline-block;
+                        a {
+                            border: 3px solid;
+                            display: block;
+                        }
+                    }   
+                }
+                .itemTxt {
+                    position: absolute;
+                    bottom: 10%;
+                    left: 10%;
+                    font-size: 20px;
+                    width: 100%;
+                    max-width: 170px;
+                    overflow: hidden;
+                    p {
+                        width: 100%;
+                        margin: 0;
+                        text-overflow: ellipsis;
+                    }
+                    .subTitle {
+                        margin-top: 10px;
+                        font-size: .8rem;
+                        line-height: 1.5;
+                        
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}

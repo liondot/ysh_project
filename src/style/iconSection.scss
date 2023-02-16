@@ -1,0 +1,43 @@
+.iconSection {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    ul {
+        max-width: 1100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10rem 0;
+        li {
+            text-align: center;
+            width: 100%;
+            height: 150px;
+            max-width: 23%;
+            display: block;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 1px 3px 4px 1px rgba(0,0,0,0.1);
+            span {
+                display: block;
+                text-align: center;
+                background-color: #eee;
+                font-size: 30px;
+                height: 50px;
+                line-height: 60px;
+                color: gray;
+            }
+
+            p {
+               height: 100px;
+               line-height: 1;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               line-height: 1.5;
+               font-weight: lighter;
+            }
+        }
+    }
+}

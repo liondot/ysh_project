@@ -1,0 +1,40 @@
+.datalList {
+    width: 25%;
+    flex-direction: column;
+    box-sizing: border-box;
+    float: left;
+    max-width: 300px;
+    position: relative;
+    margin-top: 60px;
+}
+
+.list {
+    width: 80%;
+    background-color: #eee;
+    padding: 15px 0;
+    margin-left: 30%;
+    border-radius: 30px;
+
+    li {
+    box-sizing: border-box;
+    padding: 0;
+    list-style:none;
+    position: relative;
+
+    a {
+        font-size: 1.2rem;
+        width: 100%;
+        margin: 15px 0;
+        padding: 10px 0;
+        color: #888;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+    }
+}
+}
+
+.list li a:hover {
+    cursor: pointer;
+    color: #000;
+}

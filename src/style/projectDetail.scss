@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+.projectDetail {
+    width: 100%;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    background-color: #333;
+    height: 100%;
+
+    a {
+        color: #fff;
+        width: 100%;
+        display: block;
+    }
+
+   
+   
+    .fullImg {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        margin: 100px auto;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 100px;
+        h3 {
+            font-size: 30px;
+            position: relative;
+        }
+        .middleLine {
+            width: 1px;
+            height: 90px;
+            background-color: #333;
+            display: block;
+            margin: 30px 0 150px 0;
+            position: relative;
+            opacity: 0;
+            transition: all .3s ease-in;
+            &:after {
+                content: '';
+                width: 15px;
+                height: 15px;
+                background-color: #333;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: all .6s ease;
+                opacity: 0;
+            }
+            &.active {
+                opacity: 1;
+            }
+            &.active:after {
+                top: 100%;
+                opacity: 1;
+            }
+        }
+      
+        img {
+            width: 90%;
+        }
+    }
+    button.goToTop {
+        position: fixed;
+        font-size: 25px;
+        bottom:30px;
+        right: 15px;
+        color: #fff;
+        border-radius: 50%;
+        background-color: #333;
+        width: 45px;
+        height: 45px;
+        line-height: 50px;
+        display: inline-block
+        ;
+        text-align: center;
+        border: none;
+        outline: none;
+        visibility: hidden;
+        transition: all .3s ease-in-out;
+        transform: translateY(100px);
+        cursor: pointer;
+        &.active {
+            visibility: visible;
+            transform: translateY(-30px);
+
+        }
+    }
+  
+}
+
+
