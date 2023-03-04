@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ysh_project/static/css/main.45085863.css",
-    "main.js": "/ysh_project/static/js/main.d0a74136.js",
+    "main.js": "/ysh_project/static/js/main.60997f26.js",
     "static/media/myprofile.png": "/ysh_project/static/media/myprofile.15c191f7bcfacd0b488c.png",
     "index.html": "/ysh_project/index.html",
     "main.45085863.css.map": "/ysh_project/static/css/main.45085863.css.map",
-    "main.d0a74136.js.map": "/ysh_project/static/js/main.d0a74136.js.map"
+    "main.60997f26.js.map": "/ysh_project/static/js/main.60997f26.js.map"
   },
   "entrypoints": [
     "static/css/main.45085863.css",
-    "static/js/main.d0a74136.js"
+    "static/js/main.60997f26.js"
   ]
 }
