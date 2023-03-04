@@ -143,33 +143,30 @@
                 }
             }
         }
-        .changeTopBtn {
-            ul {
-                li {
-                    padding-top: 10px;
-                }
+      
+        .mainDesc {
+            right: 65px;
+            bottom: 15%;
+            color: #333;
+            max-width: 100%;
+            padding: 0 15px;
+            h2 {
+                font-size: 2rem;
+                color: #333;
+            }
+            p{
+                font-size: 1.2rem;
+                color: #333;
+            }
+            .middleLine {
+                display: none;
+            }
+            p {
+                color: #333;
             }
         }
     }
-   .mainDesc {
-        right: 50px;
-        bottom: 15%;
-        color: #333;
-        max-width: 100%;
-        padding: 0 15px;
-        h2 {
-            font-size: 2rem;
-        }
-        p{
-            font-size: 1.2rem;
-        }
-        .middleLine {
-            display: none;
-        }
-        p {
-            color: #333;
-        }
-    }
+   
     .main_section:after {
         width: 100%;
         right: 0;
