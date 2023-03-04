@@ -8,9 +8,9 @@ function Home() {
     <div className="home" >
       <h2>전체보기</h2>
      <ul>
-         {dummy.projects.map(data => (
-                <li key={data.id} className="item">
-                  <Link to={`./data/${data.data}`}><h3>Title :</h3> {data.data}</Link></li>
+         {dummy.items.map(data => (
+                <li key={data.title} className="item">
+                  <Link to={`./data/${data.data}`}><h3>Title :</h3> {data.title}</Link></li>
             ))}
      </ul>
     </div>

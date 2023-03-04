@@ -7,23 +7,23 @@ function Project() {
   const {data} = useParams()
     console.log(data)
 
-  const projectList = dummy.projects.filter(project => 
-    project.data === data
+  const projectList = dummy.items.filter(item => 
+    item.data === data
   )
 
-
   return (
-      <div className='projectBox'>
+      <div className='project'>
         <h2>{data === data ? data : ""}</h2>
-        <div className='project'>
+        <div className='projectBox'>
         {projectList.map((item)=>{
           return (
-            <ProjectCon key={item.id}
+            <ProjectCon key={item.title}
             title={item.title}
             subTitle={item.subTitle}
-            image = {item.image}
             github = {item.github}
             server = {item.server}
+            pcImg = {item.pcImg}
+            moImg = {item.moImg}
             skills = {item.skills}
             detailMain = {item.detailMain}
             fullImg = {item.detailFull}
@@ -31,7 +31,7 @@ function Project() {
             state = {item.state}
             toDo = {item.toDo}
             preview = {item.preview}
-            pointColor = {item.pointColor}
+            responsive = {item.responsive}
             />
           )
           })}

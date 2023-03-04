@@ -20,3 +20,11 @@ p {
     font-size: 25px;
 }
 
+
+@media only screen and (max-width: 800px) {
+    .notFound {
+        display: flex;
+        width: 100%;
+        padding: 50px;
+    }
+}

@@ -1,21 +1,37 @@
-.projectBox {
-    width: 70%;
-    float: right;
-    height: 100%;
-    box-sizing: border-box;
-    h2 {
-        font-size: 30px;
-        margin-top: 50px;
-    }
 .project {
+  width: 70%;
+  float: right;
+  height: 100%;
+  box-sizing: border-box;
+  h2 {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+  .projectBox {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 8%;
     margin-top: 50px;
     position: relative;
     box-sizing: border-box;
-    padding: 0 10% 0 0;
-}
+    padding: 0% 5% 10% 0;
+  }
 }
 
+@media only screen and (max-width: 800px) {
+  .project {
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    .projectBox {
+      padding: 0;
+      grid-template-columns: repeat(2, 1fr);
+      .projectCon {
+        min-width: 150px !important;
+        width: 100%;
+      }
+    }
+  }
+}

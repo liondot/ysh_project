@@ -14,17 +14,19 @@ function ProjectCon(props) {
         })
     }
 
+
   return (
-    
-    <div className='projectCon'>
+    <div className='projectCon' key={props.title}>  
       <ul className='items'>
         <li className='item' onClick={onClickProject}>
           <div className="itemImg">
-           <img src={props.image} alt="" />
+           <img src={props.fullImg} alt="" />
           </div>
           <div className="itemDesc">
             <div className="iconList">
-            <span className='pgDetail'><FaHome/></span>
+            <span className='pgDetail'>
+              <FaHome/>
+            </span>
             </div>
             <div className="itemTxt">
             <p>{props.title}</p>

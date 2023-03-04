@@ -32,3 +32,24 @@
         }
     }
 }
+
+
+// mobile 
+@media only screen and (max-width: 800px) {
+.home {
+    width: 100%;
+    text-align: center;
+    ul {
+        width: 100%;
+        margin-top: 0;
+        li{
+            width: 100%;
+            box-sizing: border-box;
+            &.item{
+            max-width: unset;
+                width: 100%;
+            }
+        }
+    }
+};
+}

@@ -41,3 +41,16 @@
         }
     }
 }
+
+
+@media only screen and (max-width: 800px) {
+    .iconSection ul {
+        flex-wrap: wrap;
+        margin: 0 15px;
+        li {
+            max-width: 100%;
+            margin: 10px 0;
+        }
+    }
+  
+}

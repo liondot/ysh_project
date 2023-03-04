@@ -16,9 +16,9 @@
 
     .changeTopBtn{
         position: fixed ;
-        width: 100%;
-        height: 40px;
-        line-height: 40px;
+        width: 100vw;
+        height: 60px;
+        line-height: 60px;
         z-index: 2;
         display: block;
         ul {
@@ -73,13 +73,12 @@
         height: 100vh;
         overflow: hidden;
         box-sizing: border-box;
-        
         img{
             width: 100%;
             box-sizing: border-box;
         }
- 
     }
+
     .mainDesc {
         position: absolute;
         bottom: 7%;
@@ -114,5 +113,69 @@
         color: #fff;
     }
     }
-    
+
+}
+
+.monitorImg {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 100px 0;
+    .monitorOuter {
+        max-width: 1000px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .main_section {
+
+        .topBtn {
+            bottom: unset;
+            ul {
+                margin-top: 100px;
+                li {
+                    width: 50px;
+                    height: 50px;
+                    line-height: 60px;
+                }
+            }
+        }
+        .changeTopBtn {
+            ul {
+                li {
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+   .mainDesc {
+        right: 50px;
+        bottom: 15%;
+        color: #333;
+        max-width: 100%;
+        padding: 0 15px;
+        h2 {
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+        .middleLine {
+            display: none;
+        }
+        p {
+            color: #333;
+        }
+    }
+    .main_section:after {
+        width: 100%;
+        right: 0;
+        transform: rotate(0);
+        top: 50%;
+        background-color: #fff;
+    }
+
 }

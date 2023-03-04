@@ -1,0 +1,65 @@
+.monitorOuter {
+  width: 100%;
+  display: block;
+  max-width: 900px;
+  margin: 150px auto 50px;
+  position: relative;
+  padding: 15px;
+  .monitor {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .innerMonitor {
+      position: absolute;
+      top: 25px;
+      left: 30px;
+      max-width: 93%;
+      height: 61%;
+      overflow: hidden;
+    }
+  }
+  .mobile {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 32%;
+    img {
+      width: 100%;
+    }
+    .innerMobile {
+      position: absolute;
+      top: 24px;
+      left: 28px;
+      width: 81%;
+      height: 90%;
+      overflow: hidden;
+      border-radius: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .monitorOuter {
+    .monitor {
+      .innerMonitor {
+        top: 8px;
+        left: 13px;
+        max-width: 92%;
+      }
+    }
+    .mobile {
+      right: 15px;
+      max-width: 25%;
+      .innerMobile {
+        top: 8px;
+        left: 9px;
+        width: 81%;
+        height: 88%;
+        overflow: hidden;
+        border-radius: 4px;
+      }
+    }
+   
+  }
+}

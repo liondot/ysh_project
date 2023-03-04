@@ -1,0 +1,172 @@
+.desktopSect {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  position: relative;
+
+  h3 {
+    font-size: 40px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  .subTitle {
+    font-size: 24px;
+    font-weight: lighter;
+    margin-top: 10px;
+  }
+
+  .middleLine {
+    width: 1px;
+    height: 90px;
+    background-color: #333;
+    display: block;
+    margin: 50px 0 100px 0;
+    position: relative;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    &:after {
+      content: "";
+      width: 15px;
+      height: 15px;
+      background-color: #333;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all 0.6s ease;
+      opacity: 0;
+    }
+    &.active {
+      opacity: 1;
+    }
+    &.active:after {
+      top: 100%;
+      opacity: 1;
+    }
+  }
+
+  .monitor {
+    max-width: 1000px;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+    .desktopDesc {
+      position: absolute;
+      left: -100px;
+      top: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      writing-mode: vertical-rl;
+      z-index: 1;
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 7px;
+        background-color: skyblue;
+        width: 25px;
+        height: 100%;
+        z-index: -1;
+        padding: 10px 0;
+      }
+      .icon {
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+    }
+    .innerImg {
+      max-width: 93%;
+      width: 100%;
+      margin: 0 100px;
+      position: absolute;
+      top: 30px;
+      left: -6.5%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      height: 525px;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .scroll {
+    position: absolute;
+    top: 20px;
+    left: 101%;
+    font-size: 20px;
+    writing-mode: vertical-rl;
+    color: #aaa;
+  }
+
+  .icon {
+    font-size: 35px;
+    font-weight: lighter;
+    margin: 0 10px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .desktopSect {
+    text-align: center;
+    h3 {
+      font-size: 35px;
+    }
+    .monitor {
+      .innerImg {
+        margin: 0;
+        left: 2px;
+        padding: 0 32px;
+        top: 3%;
+        height: 61%;
+        max-width: 99%;
+      }
+      .desktopDesc {
+        top: 350px;
+        writing-mode: horizontal-tb;
+        font-size: 18px;
+        width: 100%;
+        left:0;
+        &:after {
+          left: 35%;
+          width: 14px;
+          height: 77%;
+          padding: 10px 0;
+        }
+        .icon {
+          font-size: 30px;
+        }
+      }
+    }
+    .monitor_bg {
+      padding: 0 20px;
+    }
+  
+  }
+  .desktopSect {
+     .scroll {
+    top: -60px;
+    left: 27%;
+    writing-mode: horizontal-tb;
+    font-size: 17px;
+  }
+  .icon {
+    margin-bottom: 0;
+    font-size: 30px;
+    margin: 0 5px;
+  }
+}
+}
